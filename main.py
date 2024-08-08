@@ -1,6 +1,5 @@
 import streamlit as st
 import pandas as pd
-import subprocess
 from datetime import datetime
 
 # Load exercises from CSV
