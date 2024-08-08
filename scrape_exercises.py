@@ -1,11 +1,11 @@
 import scrapetube
 import pandas as pd
 
-CHANNEL_ID = "UCuAXFkgsw1L7xaCfnd5JJOw"
+BASE_URL = "https://www.youtube.com/@altapersonal/videos"
 
-def get_videos(channel_id):
-    "Fetch video titles and URLs from the specified YouTube channel"
-    videos = scrapetube.get_channel(channel_id)
+def get_videos(base_url):
+    "Fetch video titles and URLs from the specified YouTube channel URL"
+    videos = scrapetube.get_channel(base_url)
     video_list = [{"title": video["title"], "url": f"https://www.youtube.com/watch?v={video['videoId']}"} for video in videos]
     return video_list
 
@@ -20,6 +20,6 @@ def save_exercises_to_csv(exercises):
     df.to_csv("exercises.csv", index=False)
 
 if __name__ == "__main__":
-    videos = get_videos(CHANNEL_ID)
+    videos = get_videos(BASE_URL)
     exercises = update_exercises(videos)
     save_exercises_to_csv(exercises)
