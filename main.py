@@ -9,11 +9,13 @@ st.title("Workout Logger")
 st.header("Exercise List")
 st.write("Here are some exercises you can do along with video tutorials:")
 
+
 def display_exercise_list():
     for exercise in EXERCISES:
         st.markdown(
             f"**{exercise['name']}**: [Video Tutorial]({exercise['video_link']})"
         )
+
 
 display_exercise_list()
 
