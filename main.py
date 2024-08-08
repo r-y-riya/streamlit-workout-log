@@ -1,72 +1,38 @@
 import streamlit as st
 import pandas as pd
-from data import get_exercise_data, add_exercise, EXERCISES
-
-# Title of the app
-st.title("Workout Logger")
-
-# Section for viewing the exercise list
-st.header("Exercise List")
-st.write("Here are some exercises you can do along with video tutorials:")
-
-
-def display_exercise_list():
-    for exercise in EXERCISES:
-        st.markdown(
-            f"**{exercise['name']}**: [Video Tutorial]({exercise['video_link']})"
-        )
-
-
-display_exercise_list()
-
-# Section for logging new workouts
-st.header("Log a New Workout")
-with st.form("log_exercise"):
-    exercise = st.text_input("Exercise", placeholder="Enter the exercise name")
-    reps = st.number_input("Reps", min_value=1, step=1)
-    sets = st.number_input("Sets", min_value=1, step=1)
-    submit = st.form_submit_button("Log Exercise")
-
-    if submit:
-        add_exercise(exercise, reps, sets)
-        st.success("Exercise logged!")
-
-# Section for displaying the workout history
-st.header("Workout History")
-st.write("Here is the history of your logged workouts:")
-data = get_exercise_data()
-st.dataframe(data)
-import streamlit as st
-import pandas as pd
 import subprocess
-from data import get_exercise_data, add_exercise
-
-# Run the script to scrape exercises
-subprocess.run(["python", "scrape_exercises.py"])
+from datetime import datetime
 
 # Load exercises from CSV
-exercises_df = pd.read_csv("exercises.csv")
-EXERCISES = exercises_df.to_dict(orient="records")
+@st.cache_data
+def load_exercises():
+    return pd.read_csv('exercises.csv')
+
+exercises_df = load_exercises()
 
 def display_exercise_list():
-    "Display exercises with video links"
-    for exercise in EXERCISES:
-        st.write(f"[{exercise['exercise']}]({exercise['url']})")
+    st.write("Available Exercises:")
+    for _, exercise in exercises_df.iterrows():
+        st.write(f"- [{exercise['name']}]({exercise['link']})")
 
-# Streamlit app
-st.title("Workout Logger")
+st.title("Workout Tracker")
+
 st.header("Exercise List")
 display_exercise_list()
 
-st.header("Log a New Workout")
-with st.form("log_exercise"):
-    exercise = st.text_input("Exercise")
-    reps = st.number_input("Reps", min_value=1)
-    sets = st.number_input("Sets", min_value=1)
-    submitted = st.form_submit_button("Log Exercise")
-    if submitted:
-        add_exercise(exercise, reps, sets)
-        st.success("Exercise logged!")
+st.header("Log a Workout")
+with st.form("workout_form"):
+    exercise_name = st.selectbox("Select Exercise", options=exercises_df['name'].tolist())
+    sets = st.number_input("Number of Sets", min_value=1, value=1)
+    reps = st.number_input("Number of Reps", min_value=1, value=1)
+    weight = st.number_input("Weight (kg)", min_value=0.0, value=0.0, step=0.5)
+    submit_button = st.form_submit_button("Log Workout")
+
+    if submit_button:
+        # Here you would typically save this to a database
+        # For this example, we'll just display a success message
+        st.success(f"Logged: {exercise_name}, {sets} sets, {reps} reps, {weight} kg")
 
 st.header("Workout History")
-st.write(get_exercise_data())
+# Here you would typically load and display the workout history from a database
+st.write("Your workout history will be displayed here.")
