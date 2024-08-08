@@ -8,11 +8,13 @@ EXERCISES = [
     {"name": "Squat", "video_link": "https://www.youtube.com/watch?v=aclHkVaku9U"},
     {"name": "Lunge", "video_link": "https://www.youtube.com/watch?v=QOVaHwm-Q6U"},
     {"name": "Plank", "video_link": "https://www.youtube.com/watch?v=pSHjTRCQxIw"},
-    {"name": "Burpee", "video_link": "https://www.youtube.com/watch?v=TU8QYVW0gDU"}
+    {"name": "Burpee", "video_link": "https://www.youtube.com/watch?v=TU8QYVW0gDU"},
 ]
+
 
 def get_exercise_data():
     return exercise_data
+
 
 def add_exercise(exercise, reps, sets):
     global exercise_data
