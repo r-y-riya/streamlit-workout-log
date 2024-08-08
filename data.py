@@ -9,10 +9,12 @@
         {"name": "Lunge", "video_link": "https://www.youtube.com/watch?v=QOVaHwm-Q6U"},
         {"name": "Plank", "video_link": "https://www.youtube.com/watch?v=pSHjTRCQxIw"},
         {"name": "Burpee", "video_link": "https://www.youtube.com/watch?v=TU8QYVW0gDU"}
-    ]
-        return exercise_data
+]
 
-        def add_exercise(exercise, reps, sets):
-            global exercise_data
-            new_entry = {"Exercise": exercise, "Reps": reps, "Sets": sets}
-            exercise_data = exercise_data.append(new_entry, ignore_index=True)
+def get_exercise_data():
+    return exercise_data
+
+def add_exercise(exercise, reps, sets):
+    global exercise_data
+    new_entry = {"Exercise": exercise, "Reps": reps, "Sets": sets}
+    exercise_data = exercise_data.append(new_entry, ignore_index=True)
