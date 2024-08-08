@@ -32,36 +32,36 @@ def load_exercises():
     return df
 
 # Main app
-st.title("Workout Tracker")
+st.title("Rastreador de Treinos")
 
 categorized_exercises = load_categorized_exercises()
 exercises_df = load_exercises()
 
-st.header("Log a Workout")
+st.header("Registrar um Treino")
 
 # Create two columns for the dropdowns
 col1, col2 = st.columns(2)
 
 with col1:
-    category = st.selectbox("Select Category", options=list(categorized_exercises.keys()))
+    category = st.selectbox("Selecione a Categoria", options=list(categorized_exercises.keys()))
 
 with col2:
-    exercise_name = st.selectbox("Select Exercise", options=categorized_exercises[category])
+    exercise_name = st.selectbox("Selecione o Exercício", options=categorized_exercises[category])
 
 with st.form("workout_form"):
     col3, col4, col5 = st.columns(3)
     
     with col3:
-        sets = st.number_input("Number of Sets", min_value=1, value=1)
+        sets = st.number_input("Número de Séries", min_value=1, value=1)
     
     with col4:
-        reps = st.number_input("Number of Reps", min_value=1, value=1)
+        reps = st.number_input("Número de Repetições", min_value=1, value=1)
     
     with col5:
-        weight = st.number_input("Weight (kg)", min_value=0.0, value=0.0, step=0.5)
+        weight = st.number_input("Peso (kg)", min_value=0.0, value=0.0, step=0.5)
     
-    notes = st.text_area("Notes (optional)")
-    submit_button = st.form_submit_button("Log Workout")
+    notes = st.text_area("Observações (opcional)")
+    submit_button = st.form_submit_button("Registrar Treino")
 
     if submit_button:
         # Here you would typically save this to a database
@@ -76,11 +76,11 @@ with st.form("workout_form"):
             "notes": notes
         }
         st.session_state.setdefault('workout_history', []).append(log_entry)
-        st.success(f"Logged: {exercise_name} ({category}), {sets} sets, {reps} reps, {weight} kg")
+        st.success(f"Registrado: {exercise_name} ({category}), {sets} séries, {reps} repetições, {weight} kg")
 
-st.header("Workout History")
+st.header("Histórico de Treinos")
 if 'workout_history' in st.session_state and st.session_state.workout_history:
     history_df = pd.DataFrame(st.session_state.workout_history)
     st.dataframe(history_df)
 else:
-    st.write("No workout history yet. Start logging your workouts!")
+    st.write("Ainda não há histórico de treinos. Comece a registrar seus treinos!")
