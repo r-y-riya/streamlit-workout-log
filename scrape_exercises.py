@@ -14,15 +14,20 @@ def get_videos(base_url):
         )  # Debugging line to print response type
         video_list = []
         for video in videos:
-            print("Raw video data:", video)  # Debug: print raw video data
-            video_list.append(
-                {
-                    "title": video.get("title", {})
-                    .get("runs", [{}])[0]
-                    .get("text", "No title"),
-                    "url": f"https://www.youtube.com/watch?v={video.get('videoId', '')}",
-                }
-            )
+            try:
+                print("Raw video data:", video)  # Debug: print raw video data
+                video_list.append(
+                    {
+                        "title": video.get("title", {})
+                        .get("runs", [{}])[0]
+                        .get("text", "No title"),
+                        "url": f"https://www.youtube.com/watch?v={video.get('videoId', '')}",
+                    }
+                )
+            except KeyError as e:
+                print(f"KeyError: {e} in video data: {video}")
+            except Exception as e:
+                print(f"An error occurred while processing video data: {e}")
         return video_list
     except json.JSONDecodeError as e:
         print(f"Error decoding JSON: {e}")
