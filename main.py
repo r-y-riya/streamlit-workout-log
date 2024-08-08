@@ -4,49 +4,49 @@ from datetime import datetime
 
 @st.cache_data
 def load_categorized_exercises():
-    categories = {}
-    current_category = ""
+    categorias = {}
+    categoria_atual = ""
     with open("categorized_exercises.txt", "r") as file:
         for line in file:
             line = line.strip()
             if line.endswith(":"):
-                current_category = line[:-1]
-                categories[current_category] = []
+                categoria_atual = line[:-1]
+                categorias[categoria_atual] = []
             elif line.startswith("- "):
-                categories[current_category].append(line[2:])
-    return categories
+                categorias[categoria_atual].append(line[2:])
+    return categorias
 
 @st.cache_data
 def load_exercises():
     df = pd.read_csv("exercises.csv")
-    categorized = load_categorized_exercises()
+    categorizados = load_categorized_exercises()
 
-    # Create a dictionary to map exercises to categories
-    exercise_to_category = {}
-    for category, exercises in categorized.items():
-        for exercise in exercises:
-            exercise_to_category[exercise] = category
+    # Cria um dicionário para mapear exercícios para categorias
+    exercicio_para_categoria = {}
+    for categoria, exercicios in categorizados.items():
+        for exercicio in exercicios:
+            exercicio_para_categoria[exercicio] = categoria
 
-    # Add category column to DataFrame
-    df["category"] = df["name"].map(exercise_to_category)
+    # Adiciona coluna de categoria ao DataFrame
+    df["categoria"] = df["name"].map(exercicio_para_categoria)
     return df
 
 # Main app
 st.title("Rastreador de Treinos")
 
-categorized_exercises = load_categorized_exercises()
-exercises_df = load_exercises()
+exercicios_categorizados = load_categorized_exercises()
+df_exercicios = load_exercises()
 
 st.header("Registrar um Treino")
 
-# Create two columns for the dropdowns
+# Cria duas colunas para os menus suspensos
 col1, col2 = st.columns(2)
 
 with col1:
-    category = st.selectbox("Selecione a Categoria", options=list(categorized_exercises.keys()))
+    categoria = st.selectbox("Selecione a Categoria", options=list(exercicios_categorizados.keys()))
 
 with col2:
-    exercise_name = st.selectbox("Selecione o Exercício", options=categorized_exercises[category])
+    nome_exercicio = st.selectbox("Selecione o Exercício", options=exercicios_categorizados[categoria])
 
 with st.form("workout_form"):
     col3, col4, col5 = st.columns(3)
@@ -66,21 +66,21 @@ with st.form("workout_form"):
     if submit_button:
         # Here you would typically save this to a database
         # For this example, we'll just display a success message
-        log_entry = {
-            "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "category": category,
-            "exercise": exercise_name,
-            "sets": sets,
-            "reps": reps,
-            "weight": weight,
-            "notes": notes
+        registro = {
+            "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "categoria": categoria,
+            "exercicio": nome_exercicio,
+            "series": sets,
+            "repeticoes": reps,
+            "peso": weight,
+            "observacoes": notes
         }
-        st.session_state.setdefault('workout_history', []).append(log_entry)
-        st.success(f"Registrado: {exercise_name} ({category}), {sets} séries, {reps} repetições, {weight} kg")
+        st.session_state.setdefault('historico_treinos', []).append(registro)
+        st.success(f"Registrado: {nome_exercicio} ({categoria}), {sets} séries, {reps} repetições, {weight} kg")
 
 st.header("Histórico de Treinos")
-if 'workout_history' in st.session_state and st.session_state.workout_history:
-    history_df = pd.DataFrame(st.session_state.workout_history)
-    st.dataframe(history_df)
+if 'historico_treinos' in st.session_state and st.session_state.historico_treinos:
+    df_historico = pd.DataFrame(st.session_state.historico_treinos)
+    st.dataframe(df_historico)
 else:
     st.write("Ainda não há histórico de treinos. Comece a registrar seus treinos!")
