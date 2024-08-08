@@ -5,10 +5,14 @@ from data import get_exercise_data, add_exercise, EXERCISES
 # Title of the app
 st.title("Workout Logger")
 
+
 def display_exercise_list():
     st.subheader("Exercise List")
     for exercise in EXERCISES:
-        st.markdown(f"**{exercise['name']}**: [Video Tutorial]({exercise['video_link']})")
+        st.markdown(
+            f"**{exercise['name']}**: [Video Tutorial]({exercise['video_link']})"
+        )
+
 
 display_exercise_list()
 with st.form("log_exercise"):
