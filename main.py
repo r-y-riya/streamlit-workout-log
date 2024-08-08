@@ -1,6 +1,6 @@
 import streamlit as st
 import pandas as pd
-
+from datetime import datetime
 
 @st.cache_data
 def load_categorized_exercises():
@@ -15,7 +15,6 @@ def load_categorized_exercises():
             elif line.startswith("- "):
                 categories[current_category].append(line[2:])
     return categories
-
 
 @st.cache_data
 def load_exercises():
@@ -32,43 +31,56 @@ def load_exercises():
     df["category"] = df["name"].map(exercise_to_category)
     return df
 
-
-def display_exercise_list(categorized_exercises):
-    for category, exercises in categorized_exercises.items():
-        with st.expander(f"{category} Exercises"):
-            for exercise in exercises:
-                st.write(f"- {exercise}")
-
-
 # Main app
 st.title("Workout Tracker")
 
 categorized_exercises = load_categorized_exercises()
 exercises_df = load_exercises()
 
-st.header("Exercise List")
-display_exercise_list(categorized_exercises)
-
 st.header("Log a Workout")
+
+# Create two columns for the dropdowns
+col1, col2 = st.columns(2)
+
+with col1:
+    category = st.selectbox("Select Category", options=list(categorized_exercises.keys()))
+
+with col2:
+    exercise_name = st.selectbox("Select Exercise", options=categorized_exercises[category])
+
 with st.form("workout_form"):
-    category = st.selectbox(
-        "Select Category", options=list(categorized_exercises.keys())
-    )
-    exercise_name = st.selectbox(
-        "Select Exercise", options=categorized_exercises[category]
-    )
-    sets = st.number_input("Number of Sets", min_value=1, value=1)
-    reps = st.number_input("Number of Reps", min_value=1, value=1)
-    weight = st.number_input("Weight (kg)", min_value=0.0, value=0.0, step=0.5)
+    col3, col4, col5 = st.columns(3)
+    
+    with col3:
+        sets = st.number_input("Number of Sets", min_value=1, value=1)
+    
+    with col4:
+        reps = st.number_input("Number of Reps", min_value=1, value=1)
+    
+    with col5:
+        weight = st.number_input("Weight (kg)", min_value=0.0, value=0.0, step=0.5)
+    
+    notes = st.text_area("Notes (optional)")
     submit_button = st.form_submit_button("Log Workout")
 
     if submit_button:
         # Here you would typically save this to a database
         # For this example, we'll just display a success message
-        st.success(
-            f"Logged: {exercise_name} ({category}), {sets} sets, {reps} reps, {weight} kg"
-        )
+        log_entry = {
+            "date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "category": category,
+            "exercise": exercise_name,
+            "sets": sets,
+            "reps": reps,
+            "weight": weight,
+            "notes": notes
+        }
+        st.session_state.setdefault('workout_history', []).append(log_entry)
+        st.success(f"Logged: {exercise_name} ({category}), {sets} sets, {reps} reps, {weight} kg")
 
 st.header("Workout History")
-# Here you would typically load and display the workout history from a database
-st.write("Your workout history will be displayed here.")
+if 'workout_history' in st.session_state and st.session_state.workout_history:
+    history_df = pd.DataFrame(st.session_state.workout_history)
+    st.dataframe(history_df)
+else:
+    st.write("No workout history yet. Start logging your workouts!")
