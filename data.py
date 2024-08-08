@@ -19,4 +19,4 @@ def get_exercise_data():
 def add_exercise(exercise, reps, sets):
     global exercise_data
     new_entry = {"Exercise": exercise, "Reps": reps, "Sets": sets}
-    exercise_data = exercise_data.append(new_entry, ignore_index=True)
+    exercise_data = pd.concat([exercise_data, pd.DataFrame([new_entry])], ignore_index=True)
