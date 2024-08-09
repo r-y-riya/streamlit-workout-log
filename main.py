@@ -148,10 +148,8 @@ st.markdown("---")
 if "treinos" in st.session_state and st.session_state.treinos:
     treino_hoje = st.session_state.treinos[-1]
 
-    # Format the date
+    # 1. Date and Workout Name
     formatted_date = format_date(treino_hoje["data"])
-    
-    # Display the date and workout name as the main header
     st.markdown(f"## {formatted_date} - {treino_hoje['nome']}")
     
     # Display observations if they exist
@@ -160,21 +158,15 @@ if "treinos" in st.session_state and st.session_state.treinos:
     
     st.divider()
 
-    # Exercise Details
-    st.subheader("Detalhes dos Exercícios")
-    for exercicio in treino_hoje["exercicios"]:
-        with st.container():
-            st.markdown(f"### {exercicio['exercicio']}")
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                st.metric("Sets", exercicio["series"])
-            with col2:
-                st.metric("Reps", exercicio["repeticoes"])
-            with col3:
-                st.metric("Peso (kg)", exercicio["peso"])
-        st.markdown("---")
+    # 2. Dicas do Treino
+    st.subheader("Dicas para o Treino")
+    with st.container():
+        st.info(
+            "Mantenha-se hidratado e concentre-se na forma correta dos exercícios. "
+            "Lembre-se de aquecer antes do treino e alongar após o término."
+        )
 
-    # Exercise Video
+    # 3. Video do Exercicio
     st.subheader("Vídeo do Exercício")
     with st.container():
         selected_exercise = st.selectbox(
@@ -187,13 +179,19 @@ if "treinos" in st.session_state and st.session_state.treinos:
         st.video(video_url)
         st.markdown(f"[Assistir no YouTube]({video_url})")
 
-    # Tips
-    st.subheader("Dicas para o Treino")
-    with st.container():
-        st.info(
-            "Mantenha-se hidratado e concentre-se na forma correta dos exercícios. "
-            "Lembre-se de aquecer antes do treino e alongar após o término."
-        )
+    # 4. Detalhes dos Exercicios
+    st.subheader("Detalhes dos Exercícios")
+    for exercicio in treino_hoje["exercicios"]:
+        with st.container():
+            st.markdown(f"### {exercicio['exercicio']}")
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Sets", exercicio["series"])
+            with col2:
+                st.metric("Reps", exercicio["repeticoes"])
+            with col3:
+                st.metric("Peso (kg)", exercicio["peso"])
+        st.markdown("---")
 
 else:
     st.info("Ainda não há treino registrado hoje. Crie um novo treino!")
