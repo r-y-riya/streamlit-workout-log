@@ -145,15 +145,14 @@ with st.expander(
         st.success(f"Treino '{workout_name}' criado com sucesso!")
 
 st.markdown("---")
-st.header("Treino de Hoje")
 if "treinos" in st.session_state and st.session_state.treinos:
     treino_hoje = st.session_state.treinos[-1]
 
     # Format the date
     formatted_date = format_date(treino_hoje["data"])
     
-    # Display the date and workout name
-    st.markdown(f"**{formatted_date} - {treino_hoje['nome']}**")
+    # Display the date and workout name as the main header
+    st.markdown(f"## {formatted_date} - {treino_hoje['nome']}")
     
     # Display observations if they exist
     if treino_hoje["observacoes"].strip():
