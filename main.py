@@ -16,7 +16,7 @@ def get_video_url(exercise_name):
         # Add more mappings as needed
     }
     return video_mapping.get(
-        exercise_name, "https://www.youtube.com/watch?v=default_video"
+        exercise_name, "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
     )
 
 
@@ -182,6 +182,8 @@ if "treinos" in st.session_state and st.session_state.treinos:
                 [ex["exercicio"] for ex in treino_hoje["exercicios"]],
             )
             video_url = get_video_url(selected_exercise)
+            if video_url == "https://www.youtube.com/watch?v=dQw4w9WgXcQ":
+                st.warning("Nenhum vídeo específico disponível para este exercício. Exibindo vídeo padrão.")
             st.video(video_url)
             st.markdown(f"[Assistir no YouTube]({video_url})")
 
