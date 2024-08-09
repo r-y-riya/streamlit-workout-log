@@ -15,13 +15,11 @@ def format_date(date_string):
     date = datetime.strptime(date_string, "%Y-%m-%d %H:%M:%S")
     return date.strftime("%B %d, %Y")
 
-
 @st.cache_data
 def load_exercises_from_json():
     with open("exercises.json", "r") as file:
         data = json.load(file)
     return data["exercises"]
-
 
 # Main app
 st.title("Rastreador de Treinos")
@@ -123,31 +121,37 @@ st.header("Treino de Hoje")
 if "treinos" in st.session_state and st.session_state.treinos:
     treino_hoje = st.session_state.treinos[-1]
     
-    col1, col2, col3, col4 = st.columns(4)
+    col1, col2 = st.columns(2)
     
     with col1:
-        st.subheader("Data do Treino")
-        st.write(format_date(treino_hoje['data']))
+        # Workout Date card
+        with st.container():
+            st.write(format_date(treino_hoje['data']))
+        
+        # Sets and Reps card
+        with st.container():
+            for exercicio in treino_hoje["exercicios"]:
+                st.subheader(exercicio['exercicio'])
+                col_sets, col_reps, col_weight = st.columns(3)
+                with col_sets:
+                    st.metric("Sets", exercicio['series'])
+                with col_reps:
+                    st.metric("Reps", exercicio['repeticoes'])
+                with col_weight:
+                    st.metric("Peso (kg)", exercicio['peso'])
     
     with col2:
-        st.subheader("Dicas")
-        st.write("Dicas para seu treino aparecerão aqui. Mantenha-se hidratado e concentre-se na forma correta dos exercícios.")
-    
-    with col3:
-        st.subheader("Sets e Reps")
-        for exercicio in treino_hoje["exercicios"]:
-            st.subheader(exercicio['exercicio'])
-            col1, col2, col3 = st.columns(3)
-            col1.metric("Sets", exercicio['series'])
-            col2.metric("Reps", exercicio['repeticoes'])
-            col3.metric("Peso (kg)", exercicio['peso'])
-    
-    with col4:
-        st.subheader("Vídeo do Exercício")
-        selected_exercise = st.selectbox("Selecione um exercício", 
-                                         [ex['exercicio'] for ex in treino_hoje["exercicios"]])
-        video_url = get_video_url(selected_exercise)
-        st.video(video_url)
+        # Dicas card
+        with st.container():
+            st.write("Dicas para seu treino aparecerão aqui. Mantenha-se hidratado e concentre-se na forma correta dos exercícios.")
+        
+        # Exercise Video card
+        with st.container():
+            st.subheader("Vídeo do Exercício")
+            selected_exercise = st.selectbox("Selecione um exercício", 
+                                             [ex['exercicio'] for ex in treino_hoje["exercicios"]])
+            video_url = get_video_url(selected_exercise)
+            st.video(video_url)
 
 else:
     st.write("Ainda nao ha treino registrado hoje. Crie um novo treino!")
