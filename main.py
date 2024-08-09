@@ -1,44 +1,25 @@
 import streamlit as st
-import pandas as pd
+import json
 from datetime import datetime
 
-
 @st.cache_data
-def load_categorized_exercises():
-    categorias = {}
-    categoria_atual = ""
-    with open("categorized_exercises.txt", "r") as file:
-        for line in file:
-            line = line.strip()
-            if line.endswith(":"):
-                categoria_atual = line[:-1]
-                categorias[categoria_atual] = []
-            elif line.startswith("- "):
-                categorias[categoria_atual].append(line[2:])
-    return categorias
-
-
-@st.cache_data
-def load_exercises():
-    df = pd.read_csv("exercises.csv")
-    categorizados = load_categorized_exercises()
-
-    # Cria um dicionário para mapear exercícios para categorias
-    exercicio_para_categoria = {}
-    for categoria, exercicios in categorizados.items():
-        for exercicio in exercicios:
-            exercicio_para_categoria[exercicio] = categoria
-
-    # Adiciona coluna de categoria ao DataFrame
-    df["categoria"] = df["name"].map(exercicio_para_categoria)
-    return df
-
+def load_exercises_from_json():
+    with open("exercises.json", "r") as file:
+        data = json.load(file)
+    return data["exercises"]
 
 # Main app
 st.title("Rastreador de Treinos")
 
-exercicios_categorizados = load_categorized_exercises()
-df_exercicios = load_exercises()
+exercises_data = load_exercises_from_json()
+
+# Create a dictionary to group exercises by category
+exercises_by_category = {}
+for exercise in exercises_data:
+    category = exercise["category"]
+    if category not in exercises_by_category:
+        exercises_by_category[category] = []
+    exercises_by_category[category].append(exercise)
 
 st.header("Criar um treino")
 
@@ -58,16 +39,21 @@ for i in range(number_of_exercises):
     with col1:
         categoria = st.selectbox(
             f"Selecione a Categoria {i+1}",
-            options=list(exercicios_categorizados.keys()),
+            options=list(exercises_by_category.keys()),
             key=f"cat_{i}",
         )
 
     with col2:
-        nome_exercicio = st.selectbox(
+        selected_exercise = st.selectbox(
             f"Selecione o Exercício {i+1}",
-            options=exercicios_categorizados[categoria],
+            options=[f"{ex['exercise_name_ptbr']} | {ex['exercise_name_en']}" for ex in exercises_by_category[categoria]],
             key=f"ex_{i}",
         )
+
+    selected_exercise_data = next(ex for ex in exercises_by_category[categoria] if f"{ex['exercise_name_ptbr']} | {ex['exercise_name_en']}" == selected_exercise)
+
+    st.markdown(f"[{selected_exercise_data['exercise_name_ptbr']}]({selected_exercise_data['youtube_link']})")
+    st.write(selected_exercise_data['exercise_name_en'])
 
     col3, col4, col5 = st.columns(3)
 
@@ -89,7 +75,9 @@ for i in range(number_of_exercises):
     exercises.append(
         {
             "categoria": categoria,
-            "exercicio": nome_exercicio,
+            "exercicio": selected_exercise_data['exercise_name_ptbr'],
+            "exercicio_en": selected_exercise_data['exercise_name_en'],
+            "youtube_link": selected_exercise_data['youtube_link'],
             "series": sets,
             "repeticoes": reps,
             "peso": weight,
@@ -114,13 +102,11 @@ if "treinos" in st.session_state and st.session_state.treinos:
     st.write(f"Observações: {treino_hoje['observacoes']}")
 
     for i, exercicio in enumerate(treino_hoje["exercicios"], 1):
-        st.subheader(
-            f"Exercício {i}: {exercicio['exercicio']} ({exercicio['categoria']})"
-        )
+        st.subheader(f"Exercício {i}")
+        st.markdown(f"{exercicio['categoria']} | [{exercicio['exercicio']}]({exercicio['youtube_link']})")
+        st.write(exercicio['exercicio_en'])
         st.write(
             f"Séries: {exercicio['series']}, Repetições: {exercicio['repeticoes']}, Peso: {exercicio['peso']} kg"
         )
-        youtube_link = f"https://www.youtube.com/results?search_query={exercicio['exercicio'].replace(' ', '+')}"
-        st.markdown(f"[Ver vídeo do exercício no YouTube]({youtube_link})")
 else:
     st.write("Ainda não há treino registrado hoje. Crie um novo treino!")
