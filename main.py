@@ -193,15 +193,24 @@ if "treinos" in st.session_state and st.session_state.treinos:
     st.subheader("Detalhes dos Exercícios")
     for exercicio in treino_hoje["exercicios"]:
         with st.container():
-            st.markdown(f"### {exercicio['exercicio']}")
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                st.metric("Sets", exercicio["series"])
-            with col2:
-                st.metric("Reps", exercicio["repeticoes"])
-            with col3:
-                st.metric("Peso (kg)", exercicio["peso"])
-        st.markdown("---")
+            # Create a container with white background
+            with st.container():
+                st.markdown(
+                    f"""
+                    <div style="background-color: white; padding: 10px; border-radius: 5px;">
+                        <h3 style="color: black; font-size: 24px; font-weight: bold;">{exercicio['exercicio']}</h3>
+                    </div>
+                    """,
+                    unsafe_allow_html=True
+                )
+                col1, col2, col3 = st.columns(3)
+                with col1:
+                    st.metric("Sets", exercicio["series"])
+                with col2:
+                    st.metric("Reps", exercicio["repeticoes"])
+                with col3:
+                    st.metric("Peso (kg)", exercicio["peso"])
+        st.markdown("<hr style='margin-top: 0;'>", unsafe_allow_html=True)
 
 else:
     st.info("Ainda não há treino registrado hoje. Crie um novo treino!")
