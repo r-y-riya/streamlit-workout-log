@@ -6,18 +6,12 @@ from datetime import datetime
 import pandas as pd
 
 
-# Function to map exercise names to video URLs
-def get_video_url(exercise_name):
-    # This should be replaced with an actual video URL lookup or API call
-    video_mapping = {
-        "Squat": "https://www.youtube.com/watch?v=actual_squat_video",
-        "Bench Press": "https://www.youtube.com/watch?v=actual_bench_press_video",
-        "Deadlift": "https://www.youtube.com/watch?v=actual_deadlift_video",
-        # Add more mappings as needed
-    }
-    return video_mapping.get(
-        exercise_name, "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-    )
+# Function to get video URL from exercises data
+def get_video_url(exercise_name, exercises_data):
+    for exercise in exercises_data:
+        if exercise['exercise_name_ptbr'] == exercise_name or exercise['exercise_name_en'] == exercise_name:
+            return exercise['youtube_link']
+    return "https://www.youtube.com/watch?v=dQw4w9WgXcQ"  # Default video if not found
 
 
 # Function to format date
@@ -181,7 +175,7 @@ if "treinos" in st.session_state and st.session_state.treinos:
                 "Selecione um exercício",
                 [ex["exercicio"] for ex in treino_hoje["exercicios"]],
             )
-            video_url = get_video_url(selected_exercise)
+            video_url = get_video_url(selected_exercise, exercises_data)
             if video_url == "https://www.youtube.com/watch?v=dQw4w9WgXcQ":
                 st.warning("Nenhum vídeo específico disponível para este exercício. Exibindo vídeo padrão.")
             st.video(video_url)
