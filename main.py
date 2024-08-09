@@ -29,14 +29,14 @@ st.header("Criar um treino")
 
 workout_name = st.text_input("Nome do treino")
 number_of_exercises = st.number_input(
-    "Número de exercícios (1-6)", min_value=1, max_value=6, value=1
+    "Número de exercicios (1-6)", min_value=1, max_value=6, value=1
 )
-workout_notes = st.text_area("Observações do treino (opcional)")
+workout_notes = st.text_area("Observacoes do treino (opcional)")
 
 exercises = []
 
 for i in range(number_of_exercises):
-    st.subheader(f"Exercício {i+1}")
+    st.subheader(f"Exercicio {i+1}")
 
     col1, col2 = st.columns(2)
 
@@ -49,7 +49,7 @@ for i in range(number_of_exercises):
 
     with col2:
         selected_exercise = st.selectbox(
-            f"Selecione o Exercício {i+1}",
+            f"Selecione o Exercicio {i+1}",
             options=[
                 f"{ex['exercise_name_ptbr']} | {ex['exercise_name_en']}"
                 for ex in exercises_by_category[categoria]
@@ -72,12 +72,12 @@ for i in range(number_of_exercises):
 
     with col3:
         sets = st.number_input(
-            f"Número de Séries {i+1}", min_value=1, value=1, key=f"sets_{i}"
+            f"Número de Series {i+1}", min_value=1, value=1, key=f"sets_{i}"
         )
 
     with col4:
         reps = st.number_input(
-            f"Número de Repetições {i+1}", min_value=1, value=1, key=f"reps_{i}"
+            f"Número de Repeticoes {i+1}", min_value=1, value=1, key=f"reps_{i}"
         )
 
     with col5:
@@ -112,16 +112,16 @@ if "treinos" in st.session_state and st.session_state.treinos:
     treino_hoje = st.session_state.treinos[-1]
     st.write(f"Nome: {treino_hoje['nome']}")
     st.write(f"Data: {treino_hoje['data']}")
-    st.write(f"Observações: {treino_hoje['observacoes']}")
+    st.write(f"Observacoes: {treino_hoje['observacoes']}")
 
     for i, exercicio in enumerate(treino_hoje["exercicios"], 1):
-        st.subheader(f"Exercício {i}")
+        st.subheader(f"Exercicio {i}")
         st.markdown(
             f"{exercicio['categoria']} | [{exercicio['exercicio']}]({exercicio['youtube_link']})"
         )
         st.write(exercicio["exercicio_en"])
         st.write(
-            f"Séries: {exercicio['series']}, Repetições: {exercicio['repeticoes']}, Peso: {exercicio['peso']} kg"
+            f"Series: {exercicio['series']}, Repeticoes: {exercicio['repeticoes']}, Peso: {exercicio['peso']} kg"
         )
 else:
-    st.write("Ainda não há treino registrado hoje. Crie um novo treino!")
+    st.write("Ainda nao ha treino registrado hoje. Crie um novo treino!")
