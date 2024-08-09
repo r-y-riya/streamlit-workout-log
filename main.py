@@ -82,9 +82,10 @@ with st.expander(
             ]
             st.markdown(f"<h4 style='color: #1E90FF;'>Selecione o Exercicio {i+1}</h4>", unsafe_allow_html=True)
             selected_exercise = st.selectbox(
-                "",
+                f"Exercicio {i+1}",
                 options=exercise_options,
                 key=f"ex_{i}",
+                label_visibility="collapsed"
             )
 
         selected_exercise_data = next(
