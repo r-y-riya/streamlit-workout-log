@@ -53,14 +53,18 @@ for exercise in exercises_data:
 with st.expander(
     "Criar um treino", expanded=not st.session_state.get("workout_created", False)
 ):
-    workout_name = st.text_input("Nome do treino")
-    number_of_exercises = st.number_input("Número de exercicios", min_value=1, value=1)
+    col1, col2 = st.columns(2)
+    with col1:
+        workout_name = st.text_input("Nome do treino")
+    with col2:
+        number_of_exercises = st.number_input("Número de exercicios", min_value=1, value=1)
+    
     workout_notes = st.text_area("Observacoes do treino (opcional)")
 
     exercises = []
 
     for i in range(number_of_exercises):
-        st.subheader(f"Exercicio {i+1}")
+        st.markdown(f"### Exercicio {i+1}")
 
         col1, col2 = st.columns(2)
 
@@ -76,8 +80,9 @@ with st.expander(
                 f"{ex['exercise_name_ptbr']} | {ex['exercise_name_en']}"
                 for ex in exercises_by_category[categoria]
             ]
+            st.markdown(f"<h4 style='color: #1E90FF;'>Selecione o Exercicio {i+1}</h4>", unsafe_allow_html=True)
             selected_exercise = st.selectbox(
-                f"Selecione o Exercicio {i+1}",
+                "",
                 options=exercise_options,
                 key=f"ex_{i}",
             )
@@ -138,48 +143,55 @@ with st.expander(
         st.session_state["workout_created"] = True
         st.success(f"Treino '{workout_name}' criado com sucesso!")
 
+st.markdown("---")
 st.header("Treino de Hoje")
 if "treinos" in st.session_state and st.session_state.treinos:
     treino_hoje = st.session_state.treinos[-1]
 
-    col1, col2 = st.columns(2)
+    # Workout Summary
+    st.subheader("Resumo do Treino")
+    with st.container():
+        st.markdown(f"**Data:** {format_date(treino_hoje['data'])}")
+        st.markdown(f"**Nome do Treino:** {treino_hoje['nome']}")
+        if treino_hoje['observacoes']:
+            st.markdown(f"**Observações:** {treino_hoje['observacoes']}")
 
-    with col1:
-        # Workout Date card
-        with st.container():
-            st.write(format_date(treino_hoje["data"]))
+    st.markdown("---")
 
-        # Sets and Reps card
+    # Exercise Details
+    st.subheader("Detalhes dos Exercícios")
+    for exercicio in treino_hoje["exercicios"]:
         with st.container():
-            for exercicio in treino_hoje["exercicios"]:
-                st.subheader(exercicio["exercicio"])
-                col_sets, col_reps, col_weight = st.columns(3)
-                with col_sets:
-                    st.metric("Sets", exercicio["series"])
-                with col_reps:
-                    st.metric("Reps", exercicio["repeticoes"])
-                with col_weight:
-                    st.metric("Peso (kg)", exercicio["peso"])
+            st.markdown(f"### {exercicio['exercicio']}")
+            col1, col2, col3 = st.columns(3)
+            with col1:
+                st.metric("Sets", exercicio["series"])
+            with col2:
+                st.metric("Reps", exercicio["repeticoes"])
+            with col3:
+                st.metric("Peso (kg)", exercicio["peso"])
+        st.markdown("---")
 
-    with col2:
-        # Dicas card
-        with st.container():
-            st.write(
-                "Dicas para seu treino aparecerão aqui. Mantenha-se hidratado e concentre-se na forma correta dos exercícios."
-            )
+    # Exercise Video
+    st.subheader("Vídeo do Exercício")
+    with st.container():
+        selected_exercise = st.selectbox(
+            "Selecione um exercício",
+            [ex["exercicio"] for ex in treino_hoje["exercicios"]],
+        )
+        video_url = get_video_url(selected_exercise, exercises_data)
+        if video_url == "https://www.youtube.com/watch?v=dQw4w9WgXcQ":
+            st.warning("Nenhum vídeo específico disponível para este exercício. Exibindo vídeo padrão.")
+        st.video(video_url)
+        st.markdown(f"[Assistir no YouTube]({video_url})")
 
-        # Exercise Video card
-        with st.container():
-            st.subheader("Vídeo do Exercício")
-            selected_exercise = st.selectbox(
-                "Selecione um exercício",
-                [ex["exercicio"] for ex in treino_hoje["exercicios"]],
-            )
-            video_url = get_video_url(selected_exercise, exercises_data)
-            if video_url == "https://www.youtube.com/watch?v=dQw4w9WgXcQ":
-                st.warning("Nenhum vídeo específico disponível para este exercício. Exibindo vídeo padrão.")
-            st.video(video_url)
-            st.markdown(f"[Assistir no YouTube]({video_url})")
+    # Tips
+    st.subheader("Dicas para o Treino")
+    with st.container():
+        st.info(
+            "Mantenha-se hidratado e concentre-se na forma correta dos exercícios. "
+            "Lembre-se de aquecer antes do treino e alongar após o término."
+        )
 
 else:
-    st.write("Ainda nao ha treino registrado hoje. Crie um novo treino!")
+    st.info("Ainda não há treino registrado hoje. Crie um novo treino!")
