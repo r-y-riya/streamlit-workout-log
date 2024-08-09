@@ -190,31 +190,31 @@ if "treinos" in st.session_state and st.session_state.treinos:
         st.markdown(f"[Assistir no YouTube]({video_url})")
 
     # 4. Detalhes dos Exercicios
-st.subheader("Detalhes dos Exercícios")
-for i, exercicio in enumerate(treino_hoje["exercicios"]):
-    with st.container():
-        st.markdown(f"### {exercicio['exercicio']}")
-        col1, col2, col3, col4 = st.columns([1,1,1,2])
-        with col1:
-            st.metric("Sets", exercicio["series"])
-        with col2:
-            st.metric("Reps", exercicio["repeticoes"])
-        with col3:
-            st.metric("Peso (kg)", exercicio["peso"])
-        with col4:
-            new_weight = st.number_input(
-                f"Ajustar Peso (kg)",
-                min_value=0.0,
-                value=float(exercicio["peso"]),
-                step=0.5,
-                key=f"adjust_weight_{i}"
-            )
-            if new_weight != exercicio["peso"]:
-                st.session_state.treinos[-1]["exercicios"][i]["peso"] = new_weight
-    st.markdown("---")
+    st.subheader("Detalhes dos Exercícios")
+    for i, exercicio in enumerate(treino_hoje["exercicios"]):
+        with st.container():
+            st.markdown(f"### {exercicio['exercicio']}")
+            col1, col2, col3, col4 = st.columns([1,1,1,2])
+            with col1:
+                st.metric("Sets", exercicio["series"])
+            with col2:
+                st.metric("Reps", exercicio["repeticoes"])
+            with col3:
+                st.metric("Peso (kg)", exercicio["peso"])
+            with col4:
+                new_weight = st.number_input(
+                    f"Ajustar Peso (kg)",
+                    min_value=0.0,
+                    value=float(exercicio["peso"]),
+                    step=0.5,
+                    key=f"adjust_weight_{i}"
+                )
+                if new_weight != exercicio["peso"]:
+                    st.session_state.treinos[-1]["exercicios"][i]["peso"] = new_weight
+        st.markdown("---")
 
-if st.button("Salvar Alterações"):
-    st.success("Alterações salvas com sucesso!")
+    if st.button("Salvar Alterações"):
+        st.success("Alterações salvas com sucesso!")
 
 else:
     st.info("Ainda não há treino registrado hoje. Crie um novo treino!")
