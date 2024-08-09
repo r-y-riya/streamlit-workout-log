@@ -182,11 +182,8 @@ if "treinos" in st.session_state and st.session_state.treinos:
                 [ex["exercicio"] for ex in treino_hoje["exercicios"]],
             )
             video_url = get_video_url(selected_exercise)
-            try:
-                st.video(video_url)
-            except Exception as e:
-                st.error(f"Erro ao carregar o vídeo: {str(e)}")
-                st.write("Por favor, tente novamente mais tarde ou contate o suporte.")
+            st.video(video_url)
+            st.markdown(f"[Assistir no YouTube]({video_url})")
 
 else:
     st.write("Ainda nao ha treino registrado hoje. Crie um novo treino!")
