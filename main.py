@@ -37,50 +37,65 @@ st.title("Rastreador de Treinos")
 exercicios_categorizados = load_categorized_exercises()
 df_exercicios = load_exercises()
 
-st.header("Registrar um Treino")
+st.header("Criar um treino")
 
-# Cria duas colunas para os menus suspensos
-col1, col2 = st.columns(2)
+workout_name = st.text_input("Nome do treino")
+number_of_exercises = st.number_input("Número de exercícios (1-6)", min_value=1, max_value=6, value=1)
+workout_notes = st.text_area("Observações do treino (opcional)")
 
-with col1:
-    categoria = st.selectbox("Selecione a Categoria", options=list(exercicios_categorizados.keys()))
+exercises = []
 
-with col2:
-    nome_exercicio = st.selectbox("Selecione o Exercício", options=exercicios_categorizados[categoria])
-
-with st.form("workout_form"):
+for i in range(number_of_exercises):
+    st.subheader(f"Exercício {i+1}")
+    
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        categoria = st.selectbox(f"Selecione a Categoria {i+1}", options=list(exercicios_categorizados.keys()), key=f"cat_{i}")
+    
+    with col2:
+        nome_exercicio = st.selectbox(f"Selecione o Exercício {i+1}", options=exercicios_categorizados[categoria], key=f"ex_{i}")
+    
     col3, col4, col5 = st.columns(3)
     
     with col3:
-        sets = st.number_input("Número de Séries", min_value=1, value=1)
+        sets = st.number_input(f"Número de Séries {i+1}", min_value=1, value=1, key=f"sets_{i}")
     
     with col4:
-        reps = st.number_input("Número de Repetições", min_value=1, value=1)
+        reps = st.number_input(f"Número de Repetições {i+1}", min_value=1, value=1, key=f"reps_{i}")
     
     with col5:
-        weight = st.number_input("Peso (kg)", min_value=0.0, value=0.0, step=0.5)
+        weight = st.number_input(f"Peso (kg) {i+1}", min_value=0.0, value=0.0, step=0.5, key=f"weight_{i}")
     
-    notes = st.text_area("Observações (opcional)")
-    submit_button = st.form_submit_button("Registrar Treino")
+    exercises.append({
+        "categoria": categoria,
+        "exercicio": nome_exercicio,
+        "series": sets,
+        "repeticoes": reps,
+        "peso": weight
+    })
 
-    if submit_button:
-        # Here you would typically save this to a database
-        # For this example, we'll just display a success message
-        registro = {
-            "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-            "categoria": categoria,
-            "exercicio": nome_exercicio,
-            "series": sets,
-            "repeticoes": reps,
-            "peso": weight,
-            "observacoes": notes
-        }
-        st.session_state.setdefault('historico_treinos', []).append(registro)
-        st.success(f"Registrado: {nome_exercicio} ({categoria}), {sets} séries, {reps} repetições, {weight} kg")
+if st.button("Criar Treino"):
+    workout = {
+        "nome": workout_name,
+        "data": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "observacoes": workout_notes,
+        "exercicios": exercises
+    }
+    st.session_state.setdefault('treinos', []).append(workout)
+    st.success(f"Treino '{workout_name}' criado com sucesso!")
 
-st.header("Histórico de Treinos")
-if 'historico_treinos' in st.session_state and st.session_state.historico_treinos:
-    df_historico = pd.DataFrame(st.session_state.historico_treinos)
-    st.dataframe(df_historico)
+st.header("Treino de Hoje")
+if 'treinos' in st.session_state and st.session_state.treinos:
+    treino_hoje = st.session_state.treinos[-1]
+    st.write(f"Nome: {treino_hoje['nome']}")
+    st.write(f"Data: {treino_hoje['data']}")
+    st.write(f"Observações: {treino_hoje['observacoes']}")
+    
+    for i, exercicio in enumerate(treino_hoje['exercicios'], 1):
+        st.subheader(f"Exercício {i}: {exercicio['exercicio']} ({exercicio['categoria']})")
+        st.write(f"Séries: {exercicio['series']}, Repetições: {exercicio['repeticoes']}, Peso: {exercicio['peso']} kg")
+        youtube_link = f"https://www.youtube.com/results?search_query={exercicio['exercicio'].replace(' ', '+')}"
+        st.markdown(f"[Ver vídeo do exercício no YouTube]({youtube_link})")
 else:
-    st.write("Ainda não há histórico de treinos. Comece a registrar seus treinos!")
+    st.write("Ainda não há treino registrado hoje. Crie um novo treino!")
