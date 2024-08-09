@@ -9,8 +9,11 @@ import pandas as pd
 # Function to get video URL from exercises data
 def get_video_url(exercise_name, exercises_data):
     for exercise in exercises_data:
-        if exercise['exercise_name_ptbr'] == exercise_name or exercise['exercise_name_en'] == exercise_name:
-            return exercise['youtube_link']
+        if (
+            exercise["exercise_name_ptbr"] == exercise_name
+            or exercise["exercise_name_en"] == exercise_name
+        ):
+            return exercise["youtube_link"]
     return "https://www.youtube.com/watch?v=dQw4w9WgXcQ"  # Default video if not found
 
 
@@ -57,8 +60,10 @@ with st.expander(
     with col1:
         workout_name = st.text_input("Nome do treino")
     with col2:
-        number_of_exercises = st.number_input("Número de exercicios", min_value=1, value=1)
-    
+        number_of_exercises = st.number_input(
+            "Número de exercicios", min_value=1, value=1
+        )
+
     workout_notes = st.text_area("Observacoes do treino (opcional)")
 
     exercises = []
@@ -80,12 +85,15 @@ with st.expander(
                 f"{ex['exercise_name_ptbr']} | {ex['exercise_name_en']}"
                 for ex in exercises_by_category[categoria]
             ]
-            st.markdown(f"<h4 style='color: #1E90FF;'>Selecione o Exercicio {i+1}</h4>", unsafe_allow_html=True)
+            st.markdown(
+                f"Selecione o Exercicio {i+1}",
+                unsafe_allow_html=True,
+            )
             selected_exercise = st.selectbox(
                 f"Exercicio {i+1}",
                 options=exercise_options,
                 key=f"ex_{i}",
-                label_visibility="collapsed"
+                label_visibility="collapsed",
             )
 
         selected_exercise_data = next(
@@ -151,11 +159,11 @@ if "treinos" in st.session_state and st.session_state.treinos:
     # 1. Date and Workout Name
     formatted_date = format_date(treino_hoje["data"])
     st.markdown(f"## {formatted_date} - {treino_hoje['nome']}")
-    
+
     # Display observations if they exist
     if treino_hoje["observacoes"].strip():
         st.write(treino_hoje["observacoes"])
-    
+
     st.divider()
 
     # 2. Dicas do Treino
@@ -175,7 +183,9 @@ if "treinos" in st.session_state and st.session_state.treinos:
         )
         video_url = get_video_url(selected_exercise, exercises_data)
         if video_url == "https://www.youtube.com/watch?v=dQw4w9WgXcQ":
-            st.warning("Nenhum vídeo específico disponível para este exercício. Exibindo vídeo padrão.")
+            st.warning(
+                "Nenhum vídeo específico disponível para este exercício. Exibindo vídeo padrão."
+            )
         st.video(video_url)
         st.markdown(f"[Assistir no YouTube]({video_url})")
 
