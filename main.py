@@ -149,15 +149,17 @@ st.header("Treino de Hoje")
 if "treinos" in st.session_state and st.session_state.treinos:
     treino_hoje = st.session_state.treinos[-1]
 
-    # Workout Summary
-    st.subheader("Resumo do Treino")
-    with st.container():
-        st.markdown(f"**Data:** {format_date(treino_hoje['data'])}")
-        st.markdown(f"**Nome do Treino:** {treino_hoje['nome']}")
-        if treino_hoje['observacoes']:
-            st.markdown(f"**Observações:** {treino_hoje['observacoes']}")
-
-    st.markdown("---")
+    # Format the date
+    formatted_date = format_date(treino_hoje["data"])
+    
+    # Display the date and workout name
+    st.markdown(f"**{formatted_date} - {treino_hoje['nome']}**")
+    
+    # Display observations if they exist
+    if treino_hoje["observacoes"].strip():
+        st.write(treino_hoje["observacoes"])
+    
+    st.divider()
 
     # Exercise Details
     st.subheader("Detalhes dos Exercícios")
