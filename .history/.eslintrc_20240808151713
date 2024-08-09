@@ -1,0 +1,8 @@
+{
+    "rules": {
+
+      // OR
+      "max-len": "off" // Disable the rule completely
+    }
+  }
+  

@@ -1,0 +1,1408 @@
+{
+        
+        {
+        "exercise_name_ptbr": "Push Press",
+        "exercise_name_en": "Push Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=HiuwF0Pc5pc"
+        },
+        {
+        "exercise_name_ptbr": "Prancha baixa com remadas alternadas",
+        "exercise_name_en": "Forearm Plank Alternating Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=7vrnYlI4Mss"
+            },
+        {
+        "exercise_name_ptbr": "Deadlift sumo com remada alta com dois kettlebells",
+        "exercise_name_en": "Dual KB Sumo Deadlift High Pull",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=dH5RDFc1JYk"
+        },
+        {
+        "exercise_name_ptbr": "Mobilidade Ombros Bracos 90",
+        "exercise_name_en": "Bench Elbow Mobility",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=1krICxmiWNQ"
+        },
+        {
+        "exercise_name_ptbr": "Prancha alta com remadas alternadas de halteres",
+        "exercise_name_en": "Alternating Dumbbell Plank Rows",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=cDW2SKnmch4"
+        },
+        {
+        "exercise_name_ptbr": "Flexao de braco estrela",
+        "exercise_name_en": "Star Push up",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=0H72eG-lVLw"
+        },
+        {
+        "exercise_name_ptbr": "Agachamento com desenvolvimento a frente",
+        "exercise_name_en": "Press Out Squat",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=HCygih7eWhM"
+        },
+        {
+        "exercise_name_ptbr": "Leg Press Machine",
+        "exercise_name_en": "Leg Press Machine",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=7WS1BmmHPgA"
+        },
+        {
+        "exercise_name_ptbr": "Panturrilha no leg press",
+        "exercise_name_en": "Calf Leg Press",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=x9MIhGvLBQA"
+        },
+        {
+        "exercise_name_ptbr": "Deltoide Unilateral na polia",
+        "exercise_name_en": "Single Delt Fly",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=Bz5deNO1Qtg"
+        },
+        {
+        "exercise_name_ptbr": "Supino Unilateral",
+        "exercise_name_en": "Single Bench Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=L58omSp6k1g"
+        },
+        {
+        "exercise_name_ptbr": "Desenvolvimento militar unilateral com DB",
+        "exercise_name_en": "DB Single Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=VmdaczmVc70"
+        },
+        {
+        "exercise_name_ptbr": "Crucifixo",
+        "exercise_name_en": "Chest Fly",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=UxzipdcVCR4"
+        },
+        {
+        "exercise_name_ptbr": "Peitoral voador no crossover",
+        "exercise_name_en": "Crossover Chest Fly",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=CL90W3j3zlE"
+        },
+        {
+        "exercise_name_ptbr": "Peitoral Voador",
+        "exercise_name_en": "Chest Fly Machine",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=j1EMgEd6aHE"
+        },
+        {
+        "exercise_name_ptbr": "Puxada alta com pegada aberta",
+        "exercise_name_en": "Wide Grip Lat Pulldown",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=-CC8FY51G8U"
+        },
+        {
+        "exercise_name_ptbr": "Remada alta com kettlebell",
+        "exercise_name_en": "Upright KB Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=ke4YPMntek0"
+        },
+        {
+        "exercise_name_ptbr": "Remada alta na polia ou peso livre",
+        "exercise_name_en": "Upright Pulley Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=xRjkO4ycO3c"
+        },
+        {
+        "exercise_name_ptbr": "Remada alta com corda",
+        "exercise_name_en": "Upright Rope Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=hpALsnAKCOA"
+        },
+        {
+        "exercise_name_ptbr": "Puxada alta com corda",
+        "exercise_name_en": "Rope Pulldown",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=i8PN_D6bTn4"
+        },
+        {
+        "exercise_name_ptbr": "Rosca Biceps com corda",
+        "exercise_name_en": "Rope Bicep Curls",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=F50A2FsCjEo"
+        },
+        {
+        "exercise_name_ptbr": "Dorsal Voador",
+        "exercise_name_en": "Reverse Fly Machine",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=DA_LGFYdlb4"
+        },
+        {
+        "exercise_name_ptbr": "Puxada a face com corda",
+        "exercise_name_en": "Rope Face Pull",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=Jc1G7IOjTyM"
+        },
+        {
+        "exercise_name_ptbr": "Remada com dois kettlebell",
+        "exercise_name_en": "Dual KB Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=gyiEzOdu6AI"
+        },
+        {
+        "exercise_name_ptbr": "Extensao de Triceps com corda",
+        "exercise_name_en": "Rope Triceps Extension",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=OU-QKT5tPkM"
+        },
+        {
+        "exercise_name_ptbr": "Remada baixa com pegada fechada",
+        "exercise_name_en": "Close Grip Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=er_alEbery0"
+        },
+        {
+        "exercise_name_ptbr": "Barbell Push Press",
+        "exercise_name_en": "Barbell Push Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=xKpqPJR9e4w"
+        },
+        {
+        "exercise_name_ptbr": "Deadbug no banco",
+        "exercise_name_en": "Deadbug Bench Legs",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=GJaaEaVsM28"
+        },
+        {
+        "exercise_name_ptbr": "Pronado com desenvolvimento com PVC",
+        "exercise_name_en": "Prone PVC Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=CjcvJK93UwA"
+        },
+        {
+        "exercise_name_ptbr": "Flexao de escapula em quatro apoios",
+        "exercise_name_en": "Quadruped Scapular Push Ups",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=oTOLdcVUIYw"
+        },
+        {
+        "exercise_name_ptbr": "Minhoca sem Flexao",
+        "exercise_name_en": "Inchworm No Push Up",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=Z2tDwWLtQEI"
+        },
+        {
+        "exercise_name_ptbr": "Elevacao pelvica no banco",
+        "exercise_name_en": "Bench Hip Lift",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=LM7lHQRXkX8"
+        },
+        {
+        "exercise_name_ptbr": "Remada Curvada com 3 apoios",
+        "exercise_name_en": "Three Point Kettlebell Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=OI9PhLc5iq8"
+        },
+        {
+        "exercise_name_ptbr": "Remadas alternadas com kettlebell no solo",
+        "exercise_name_en": "Gorila Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=NRRgjP_oeqw"
+        },
+        {
+        "exercise_name_ptbr": "Remada de gorila segurando no alto",
+        "exercise_name_en": "Gorilla Row Top Down",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=ALqc9bEuccU"
+        },
+        {
+        "exercise_name_ptbr": "Remada unilateral com base tesoura",
+        "exercise_name_en": "Split Stance Single Arm KB Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=zVj5J5oSqts"
+        },
+        {
+        "exercise_name_ptbr": "Remada com Kettlebell",
+        "exercise_name_en": "Kettlebell Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=Z7RzNGPQQ1c"
+        },
+        {
+        "exercise_name_ptbr": "Remada com barra",
+        "exercise_name_en": "Barbell Row",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=D3eoBFh2f64"
+        },
+        {
+        "exercise_name_ptbr": "Puxada para cima deitado",
+        "exercise_name_en": "Pullover",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=oLGc9gzk8aU"
+        },
+        {
+        "exercise_name_ptbr": "Biceps Martelo",
+        "exercise_name_en": "Hammer Bicep Curls",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=Mlw44Z_MHqo"
+        },
+        {
+        "exercise_name_ptbr": "Rosca biceps sentado com cotovelos entre joelhos",
+        "exercise_name_en": "KB Preacher Curl",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=LuBF-Wn2hD0"
+        },
+        {
+        "exercise_name_ptbr": "Elevacao Lateral Curvada",
+        "exercise_name_en": "Reverse Fly",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=J2y1epbW87g"
+        },
+        {
+        "exercise_name_ptbr": "Flexao de Braco",
+        "exercise_name_en": "Push Up",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=sobajm4WEvE"
+        },
+        {
+        "exercise_name_ptbr": "Agachamento com rosca biceps com Kettlebell",
+        "exercise_name_en": "Goblet Squat to Bicep Curl",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=vwA0yYPC17M"
+        },
+        {
+        "exercise_name_ptbr": "Flexao de braco explosiva",
+        "exercise_name_en": "Explosive Push Up",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=u5j9ypmXoIA"
+        },
+        {
+        "exercise_name_ptbr": "1 Rep +1/2 Flexao de Braco",
+        "exercise_name_en": "1-1/2 Push Ups",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=sZJ33E-xI88"
+        },
+        {
+        "exercise_name_ptbr": "Supino reto alternado com halteres",
+        "exercise_name_en": "Alt DB Bench Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=HmoR57GFXvo"
+        },
+        {
+        "exercise_name_ptbr": "Supino Reto com Halteres",
+        "exercise_name_en": "DB Bench Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=jVvkWV_h7Es"
+        },
+        {
+        "exercise_name_ptbr": "Supino Reto",
+        "exercise_name_en": "Bench Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=Xgnvm3RkW0o"
+        },
+        {
+        "exercise_name_ptbr": "Desenvolvimento militar com dois halteres",
+        "exercise_name_en": "Dual DB Shoulder Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=G2Q40ydRr-U"
+        },
+        {
+        "exercise_name_ptbr": "Desenvolvimento unilateral com base tesoura",
+        "exercise_name_en": "Split Stance Single Kettlebell Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=BfZ6L7ZTJCI"
+        },
+        {
+        "exercise_name_ptbr": "Desenvolvimento militar com dois Kettlebell",
+        "exercise_name_en": "Dual Kettlebell Shoulder Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=xuvCo8ZY2t8"
+        },
+        {
+        "exercise_name_ptbr": "Desenvolvimento militar com barra",
+        "exercise_name_en": "Barbell Shoulder Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=zOgPnpvzDzg"
+        },
+        {
+        "exercise_name_ptbr": "Barbell Push Press",
+        "exercise_name_en": "Barbell Push Press",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=0neGRp43hzg"
+        },
+        {
+        "exercise_name_ptbr": "Triceps Testa",
+        "exercise_name_en": "Triceps Extension",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=YnDWqqhbT-w"
+        },
+        {
+        "exercise_name_ptbr": "Triceps Mergulho no banco",
+        "exercise_name_en": "Bench Dips",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=xrLdC6qR5jg"
+        },
+        {
+        "exercise_name_ptbr": "Abdominal borboleta",
+        "exercise_name_en": "Butterfly Crunch",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=2jsDOU-K9lU"
+        },
+        {
+        "exercise_name_ptbr": "Abdominal borboleta com toques cruzados nos joelhos",
+        "exercise_name_en": "Butterfly Cross Knees Touch",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=BIUKrRhQQek"
+        },
+        {
+        "exercise_name_ptbr": "Pullover Deadbug",
+        "exercise_name_en": "Pullover Deadbug",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=RGF5KwwJ2yE"
+        },
+        {
+        "exercise_name_ptbr": "Pullover em canoa",
+        "exercise_name_en": "Pullover Hollow Hold",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=uXVgrmmVZxY"
+        },
+        {
+        "exercise_name_ptbr": "Prancha alta com toques nos ombros",
+        "exercise_name_en": "Shoulder Taps",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=v76f5j8bW0s"
+        },
+        {
+        "exercise_name_ptbr": "Dual DB Thruster",
+        "exercise_name_en": "Dual DB Thruster",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=C7yzsR3GcaI"
+        },
+        {
+        "exercise_name_ptbr": "Burpees com duas flexoes de braco",
+        "exercise_name_en": "Double Push Up Burpee",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=Ku3nSg6U38c"
+        },
+        {
+        "exercise_name_ptbr": "Single KB Clean",
+        "exercise_name_en": "Single KB Clean",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=3FFBaR394qk"
+        },
+        {
+        "exercise_name_ptbr": "Snatch com Halter",
+        "exercise_name_en": "Dumbell Snatch",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=u9LUoUvE6Uo"
+        },
+        {
+        "exercise_name_ptbr": "Burpees",
+        "exercise_name_en": "Burpees",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=OwgB7QUPK3A"
+        },
+        {
+        "exercise_name_ptbr": "Burpees saltando a barra",
+        "exercise_name_en": "Burpees Over Bar",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=MVR1zs36k80"
+        },
+        {
+        "exercise_name_ptbr": "Burpees com saltos na caixa passando por cima",
+        "exercise_name_en": "Burpees Box Jump over",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=4JVpM9jl6eY"
+        },
+        {
+        "exercise_name_ptbr": "Agachamento frontal com desenvolvimento",
+        "exercise_name_en": "Thruster",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=2z73yMgTwsM"
+        },
+        {
+        "exercise_name_ptbr": "Meio Turkish Get Up",
+        "exercise_name_en": "Half TGU",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=hhVlEf7u9Zg"
+        },
+        {
+        "exercise_name_ptbr": "KB Dead Clean",
+        "exercise_name_en": "KB Dead Clean",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=_Fj-ok4oEJk"
+        },
+        {
+        "exercise_name_ptbr": "Dual KB Clean",
+        "exercise_name_en": "Dual KB Clean",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=nN66M-qgmWE"
+        },
+        {
+        "exercise_name_ptbr": "KB Half Snatch",
+        "exercise_name_en": "KB Half Snatch",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=2HOhf_1YQqY"
+        },
+        {
+        "exercise_name_ptbr": "KB Snatch",
+        "exercise_name_en": "KB Snatch",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=euaHjcF6s3E"
+        },
+        {
+        "exercise_name_ptbr": "Levantamento Turco",
+        "exercise_name_en": "TGU Turkish Get Up",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=v0nnG-TAlh0"
+        },
+        {
+        "exercise_name_ptbr": "Single KB Push Jerk",
+        "exercise_name_en": "Single KB Push Jerk",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=2h1t_aFMeYo"
+        },
+        {
+        "exercise_name_ptbr": "Dual KB Push Jerk",
+        "exercise_name_en": "Dual KB Push Jerk",
+        "category": "torax, ombro e triceps",
+        "youtube_link": "https://www.youtube.com/watch?v=qdUi7HX_Hps"
+        },
+        {
+        "exercise_name_ptbr": "Dual KB Clean & Jerk",
+        "exercise_name_en": "Dual KB Clean & Jerk",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=P_6bTOFrmNg"
+        },
+        {
+        "exercise_name_ptbr": "Subida Turca",
+        "exercise_name_en": "Turkish Sit Up",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=R0iosQbxcWs"
+        },
+        {
+        "exercise_name_ptbr": "Caminhada com passadas",
+        "exercise_name_en": "Walking Lunges",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=QHo-bGE1tFM"
+        },
+        {
+        "exercise_name_ptbr": "Passadas Reversas",
+        "exercise_name_en": "Reverse Lunges",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=5ubld5_L-04"
+        },
+        {
+        "exercise_name_ptbr": "Passada reversa com deadlift unilateral",
+        "exercise_name_en": "Kettlebell Reverse Lunge To Romanian Deadlift",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=79SVEfkR128"
+        },
+        {
+        "exercise_name_ptbr": "Agachamento unilateral segurando kettlebell",
+        "exercise_name_en": "Goblet Cossack Squat",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=X83Z5Az8IIw"
+        },
+        {
+        "exercise_name_ptbr": "Prancha baixa com uma perna",
+        "exercise_name_en": "Forearm Plank Single Leg",
+        "category": "costas, abdomen, biceps",
+        "youtube_link": "https://www.youtube.com/watch?v=AJcYCrj5fHw"
+        },
+        {
+        "exercise_name_ptbr": "Agachamento búlgaro segurando o kettlebell",
+        "exercise_name_en": "Goblet Bulgarian Squat",
+        "category": "parte inferior, pernas e gluteo",
+        "youtube_link": "https://www.youtube.com/watch?v=Te2VCd9-D-w"
+        },
+        {
+            "exercise_name_ptbr": "Passadas com carga a frente",
+            "exercise_name_en": "Front Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=9k9Ty-AsnjQ"
+        },
+        {
+            "exercise_name_ptbr": "Deadlift Romeno unilateral",
+            "exercise_name_en": "Single Leg RDL",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=ToysWg0ha5s"
+        },
+        {
+            "exercise_name_ptbr": "Cadeira Flexora",
+            "exercise_name_en": "Leg Flexor Chair",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=4CzCWxkrnwY"
+        },
+        {
+            "exercise_name_ptbr": "Cadeira Extensora",
+            "exercise_name_en": "Leg Extension Chair",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=73CIyllybQ4"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento Terra",
+            "exercise_name_en": "Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=lH1vhk0C28k"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento terra romeno sem tocar o chao",
+            "exercise_name_en": "Romanian Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=ahl02j0w20Q"
+        },
+        {
+            "exercise_name_ptbr": "Isometria em agachamento unilateral",
+            "exercise_name_en": "Cossack Squat Hold",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=zRTlxUhQNDU"
+        },
+        {
+            "exercise_name_ptbr": "Descida de perna estendida com auxilio de elastico",
+            "exercise_name_en": "Banded Leg Lower",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=xu8JqaTynes"
+        },
+        {
+            "exercise_name_ptbr": "Descida de perna unilateral mantendo ambas estendidas",
+            "exercise_name_en": "Leg Lower",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=YIG7ErwVfGM"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento com saltos",
+            "exercise_name_en": "Jump Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=Ka6sNUpD1S0"
+        },
+        {
+            "exercise_name_ptbr": "Passadas com salto",
+            "exercise_name_en": "Jumping Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=MJvgJTtJwIU"
+        },
+        {
+            "exercise_name_ptbr": "Afundo com saltos segurando peso",
+            "exercise_name_en": "Goblet Jump Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=p3Wlqjrma6c"
+        },
+        {
+            "exercise_name_ptbr": "Deadlift com Ketllebell",
+            "exercise_name_en": "KB Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=9VEIMXaXLF8"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento segurando kettlebell",
+            "exercise_name_en": "Goblet Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=1vKdgdlwuSc"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento terra unilateral",
+            "exercise_name_en": "Single Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=3hHDYu3rOks"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento terra unilateral",
+            "exercise_name_en": "Single Deadlift Dual Kettlebell",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=Rmb3qsl0bJE"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento terra romeno sem tocar o chao",
+            "exercise_name_en": "Romanian Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=c7licov8B-Y"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento terra com base sumo",
+            "exercise_name_en": "Sumo Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=qiwyF1KzJAM"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento Terra",
+            "exercise_name_en": "Deadlift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=n8AjkCUEut0"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento afundo",
+            "exercise_name_en": "Split Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=aujlbb8e0hg"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento unilateral",
+            "exercise_name_en": "Cossack Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=8XYQUEuirfI"
+        },
+        {
+            "exercise_name_ptbr": "Afundo segurando kettlebell",
+            "exercise_name_en": "Goblet Split Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=8KF1XEyrSfw"
+        },
+        {
+            "exercise_name_ptbr": "Afundo segurando um kettlebell ao lado",
+            "exercise_name_en": "Suitcase Split Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=iHnrwckbLRs"
+        },
+        {
+            "exercise_name_ptbr": "Afundo segurando dois kettlebells ao lado",
+            "exercise_name_en": "Farmer Split Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=2jHz4F_IBsg"
+        },
+        {
+            "exercise_name_ptbr": "Passada reversa alternada segurando kettlebell",
+            "exercise_name_en": "Alt Goblet Reverse Lunge",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=9zimwUDppCw"
+        },
+        {
+            "exercise_name_ptbr": "Passada reversa e subida na caixa",
+            "exercise_name_en": "Reverse Lunge to Step Up",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=vhSGqfxVbes"
+        },
+        {
+            "exercise_name_ptbr": "Caminhada em passadas com peso no rack frontal",
+            "exercise_name_en": "Front Rack Walking Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=AEwhCQsU6G0"
+        },
+        {
+            "exercise_name_ptbr": "Passadas com peso sobre a cabeca",
+            "exercise_name_en": "Over Head Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=W7o8LaNYFDU"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento afundo com Kettlebell sob a cabeca",
+            "exercise_name_en": "Contralateral Kettlebell Overhead Split Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=9DBYSngZHG4"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento Livre",
+            "exercise_name_en": "Air Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=WHXPAkDqXUg"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento segurando kettlebell",
+            "exercise_name_en": "Goblet Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=HOZYjTHE7ug"
+        },
+        {
+            "exercise_name_ptbr": "Semi agachamentos com Miniband",
+            "exercise_name_en": "Theraband Half Squat Pulses",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=N73x5LjF0vM"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento sumo com saltos com pausa segurando Kettlebell",
+            "exercise_name_en": "Pause Kettlebell Sumo Jump Squats",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=exICuBvjzZI"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento frontal com dois halteres",
+            "exercise_name_en": "Dual DB Front Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=ph3O1pkYKX4"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento com barra a frente",
+            "exercise_name_en": "Front Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=a-0VQxsbmHI"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento com a barra nas costas",
+            "exercise_name_en": "Back Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=lmsAEw6H2LI"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao de calcanhares",
+            "exercise_name_en": "Calf Raises",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=pJuG3_5jPn0"
+        },
+        {
+            "exercise_name_ptbr": "Avancos alternados com dois kettlebells nos ombros",
+            "exercise_name_en": "Alt Dual Ktb Forward Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=UrZOaW-HDeg"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal infra com extensao e Flexao de pernas",
+            "exercise_name_en": "Lying Knee to Leg Raise",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=WP09AdeRy5o"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal infra com elevacao de pernas",
+            "exercise_name_en": "Dual Leg Raise",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=2aYoQLaOECc"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao de pernas em figura 4",
+            "exercise_name_en": "Figure 4 Leg Lifts",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=YgA2_RLbzVA"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao de pernas alternadas com figura 4",
+            "exercise_name_en": "Alternating Figure 4 Leg Lift",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=PLNHOmU_i-E"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal infra com elevacao de pernas mantendo Kettlebell estaticos",
+            "exercise_name_en": "Dual Kettlebell Leg Lowering",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=GdEavFcrCHw"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao unilateral de pernas sentado",
+            "exercise_name_en": "Leg Pike Single",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=H-jAWJiTHtc"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao de pernas sentado",
+            "exercise_name_en": "Leg Pike",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=yFfJcjOZRO8"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao de pernas sentado passando por cima de obstaculo",
+            "exercise_name_en": "Leg Pike Lift Overs",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=l3_iV6POVHg"
+        },
+        {
+            "exercise_name_ptbr": "Batidas de pernas sentado",
+            "exercise_name_en": "Leg Pike Flutter Kicks",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=aYLmy8g3GZQ"
+        },
+        {
+            "exercise_name_ptbr": "Prancha lateral com elevacao de pernas",
+            "exercise_name_en": "Side Plank Leg Lift",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=3sVRCKxzc78"
+        },
+        {
+            "exercise_name_ptbr": "Prancha lateral com elevacao de quadril com uma perna de apoio",
+            "exercise_name_en": "Single Leg Side Plank Hip Taps",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=Ugw38c1ORjs"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao pelvica unilateral em Isometria",
+            "exercise_name_en": "Single Hip Lift Hold",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=-me0NuLtZaQ"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao Lateral",
+            "exercise_name_en": "Lateral Raise",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=IqrMhqqExds"
+        },
+        {
+            "exercise_name_ptbr": "Deslocamento lateral com Miniband",
+            "exercise_name_en": "Side Walking Banded",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=JPL2NbsjiyQ"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao Pelvica Unilateral",
+            "exercise_name_en": "Single Hip Lift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=SQP0_CNCYbA"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao pelvica unilateral",
+            "exercise_name_en": "Single Hip Lift",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=eVAx6MnHj_8"
+        },
+        {
+            "exercise_name_ptbr": "Remador unilateral sem tocar os pes no chao",
+            "exercise_name_en": "Single Tuck Up",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=UXuIWYlFZq0"
+        },
+        {
+            "exercise_name_ptbr": "Extensao de costas pronado no solo",
+            "exercise_name_en": "Back Extension",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=Ri_8YtjQL0g"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao de braco em quatro apoios",
+            "exercise_name_en": "Quadruped Controlled Articular Rotations",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=PrMKb7TInto"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao de quadril 90/90 com alongamento do pombo",
+            "exercise_name_en": "Hip Rotation 90/90 to Pigeon Stretch",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=fASdWDluHrc"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao toracica com PVC semi ajoelhado",
+            "exercise_name_en": "1/2 Kneeling PVC Rotation",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=9rnFhk5gBho"
+        },
+        {
+            "exercise_name_ptbr": "Manguito Externo",
+            "exercise_name_en": "Rotator Cuff External Rotation",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=S0MZqPB6wGs"
+        },
+        {
+            "exercise_name_ptbr": "Mobilidade de ombros na caixa",
+            "exercise_name_en": "Box Mobility",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=KpMmJzz5qxk"
+        },
+        {
+            "exercise_name_ptbr": "Mobidade de quadril tocando cotovelo no chao",
+            "exercise_name_en": "Hip Mobility Elbow To Floor",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=czFTrdo8XhQ"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao de quadril 90/90",
+            "exercise_name_en": "Hip Rotation 90/90",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=duXHK8viiuo"
+        },
+        {
+            "exercise_name_ptbr": "Prancha com toques nos pes alternados",
+            "exercise_name_en": "Plank Toe Taps",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=e8ffJSbS6tc"
+        },
+        {
+            "exercise_name_ptbr": "Alternando prancha baixa para alta",
+            "exercise_name_en": "Forearm to Tall Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=ocWx5_GRa1g"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao de bracos em volta da cabeca com kettlebell",
+            "exercise_name_en": "Kettlebell Halo",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=5TI7CTxHU5A"
+        },
+        {
+            "exercise_name_ptbr": "Cadeira Abdutora",
+            "exercise_name_en": "Abduction Chair",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=dQB_EVK27CQ"
+        },
+        {
+            "exercise_name_ptbr": "Desenvolvimento com estabilizacao de Kettlebell",
+            "exercise_name_en": "Botton Up",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=pMKb7TInto"
+        },
+        {
+            "exercise_name_ptbr": "Abducao de quadril com miniband em quadro apoios",
+            "exercise_name_en": "Fire Hidrant Hip Abduction",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=8jP5V5nDs4I"
+        },
+        {
+            "exercise_name_ptbr": "Levantamento do chao para acima da cabeca",
+            "exercise_name_en": "Ground to Over Head",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=kmVeOuDcFyE"
+        },
+        {
+            "exercise_name_ptbr": "Balanco com Kettlebell ate o topo da cabeca",
+            "exercise_name_en": "American Kettlebell Swing",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=GcpvXCa6PAQ"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal supra",
+            "exercise_name_en": "Crunches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=RcIdCf7CDRE"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com Medball",
+            "exercise_name_en": "Medball Crunches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=lDMz7jvywY8"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com pernas em 90",
+            "exercise_name_en": "Bent Hollow",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=TQ6JlgUwdSM"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal em balanco com pernas 90",
+            "exercise_name_en": "Bent Hollow Rock",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=YQkv6DEj1EQ"
+        },
+        {
+            "exercise_name_ptbr": "Movimentacao de pernas estendidas em canoa",
+            "exercise_name_en": "Bent Hollow Flutter Kicks",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=i4dndSHrkV0"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com batidas de pes",
+            "exercise_name_en": "Flutter Kicks",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=XNDtuXZCXTE"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com toques cruzados em pernas estendidas",
+            "exercise_name_en": "Cross Body L Crunches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=rn77Tq3szhw"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com pernas estendidas",
+            "exercise_name_en": "L Crunch",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=mzJ9777mS4A"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com pernas estendidas segurando anilha",
+            "exercise_name_en": "Weight L Crunch",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=vuZ3EY4YqKg"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal infra",
+            "exercise_name_en": "Reverse Crunch",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=ZBynmJTnm1s"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal com rotacao",
+            "exercise_name_en": "Crunches Rotation",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=f1nOAPUXk9A"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal cotovelos nos joelhos",
+            "exercise_name_en": "Crunches Elbow to Knees",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=OIRCEN02AMY"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal obliquo cruzado",
+            "exercise_name_en": "Oblique Cross Crunches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=R5M5ioIQXjI"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal Bicicleta",
+            "exercise_name_en": "Bicycle Crunch",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=JPw4Vv4HayA"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal Remador sem tocar os pes no chao",
+            "exercise_name_en": "Tuck Up",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=IT-ZNo0CPIs"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal Canivete",
+            "exercise_name_en": "V Up",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=cFIpypLFUX0"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal Canivete abrindo as pernas",
+            "exercise_name_en": "V up to V",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=J-7jwjhg6Gw"
+        },
+        {
+            "exercise_name_ptbr": "Canoa com batidas de pernas no alto",
+            "exercise_name_en": "Hollow Top Flutter Kicks",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=vb6iXbl8pKE"
+        },
+        {
+            "exercise_name_ptbr": "Canoa em balanco",
+            "exercise_name_en": "Hollow Rock",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=SS2GRVVN3lc"
+        },
+        {
+            "exercise_name_ptbr": "Canoa com movimentacao de anjo",
+            "exercise_name_en": "Hollow Angel",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=mEvPku9ypy0"
+        },
+        {
+            "exercise_name_ptbr": "Canoa com batidas de pernas",
+            "exercise_name_en": "Hollow Flutter Kicks",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=RAIZPPN5piI"
+        },
+        {
+            "exercise_name_ptbr": "Canoa com movimentacoes de pernas em tesoura",
+            "exercise_name_en": "Hollow Flutter Siccors",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=lmEWWE4L1rc"
+        },
+        {
+            "exercise_name_ptbr": "Canoa em isometria com peso",
+            "exercise_name_en": "Weighted Hollow Hold",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=zQ1p9V0o1Tc"
+        },
+        {
+            "exercise_name_ptbr": "Abdominal Lateral",
+            "exercise_name_en": "Side Crunches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=RKIyeTUau44"
+        },
+        {
+            "exercise_name_ptbr": "Prancha baixa lateral",
+            "exercise_name_en": "Forearm Side Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=xYAAvnU_Mww"
+        },
+        {
+            "exercise_name_ptbr": "Prancha lateral com elevacao de quadril",
+            "exercise_name_en": "Side Plank Hip Lift",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=STCfhYTmeZM"
+        },
+        {
+            "exercise_name_ptbr": "Prancha lateral com rotacao",
+            "exercise_name_en": "Side Plank Rotations",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=HZncoaV9gRg"
+        },
+        {
+            "exercise_name_ptbr": "Prancha lateral com abdominal",
+            "exercise_name_en": "Side Plank Crunches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=8TYXx1NY4cM"
+        },
+        {
+            "exercise_name_ptbr": "Pranchas laterais com transicoes",
+            "exercise_name_en": "Side Plank Switches",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=Eq6PccHsfys"
+        },
+        {
+            "exercise_name_ptbr": "Prancha lateral estrela com rotacao",
+            "exercise_name_en": "Star Plank Rotations",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=greiQlJafi8"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta com pernas flexionadas",
+            "exercise_name_en": "Quadruped Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=laFQs2cip2I"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta com pernas flexionadas e um braco",
+            "exercise_name_en": "Quadruped Single Arm Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=e74KcSLVwH0"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta",
+            "exercise_name_en": "Tall Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=-3zj0jADDLU"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta estendida",
+            "exercise_name_en": "Extended Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=RzlXMGMwsrU"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta com pes elevados",
+            "exercise_name_en": "Feet Elevated Tall Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=-PvIsX92PSI"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta com rotacao interna",
+            "exercise_name_en": "Tall Plank Internal Rotation",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=PcY1NLf3UDQ"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta com rotacao externa",
+            "exercise_name_en": "Tall Plank External Rotation",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=4v54kosXVRk"
+        },
+        {
+            "exercise_name_ptbr": "Prancha alta com rotacao de bracos alternados",
+            "exercise_name_en": "Tall Plank Controlled Articular Rotations",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=ItxOoBRYarE"
+        },
+        {
+            "exercise_name_ptbr": "Prancha Baixa",
+            "exercise_name_en": "Forearm Plank",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=gWYFucLvKFY"
+        },
+        {
+            "exercise_name_ptbr": "Prancha baixa com inclinacoes a frente",
+            "exercise_name_en": "Forearm Plank Buzzsaw",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=cTC74N_dSZE"
+        },
+        {
+            "exercise_name_ptbr": "Prancha baixa com aberturas de pernas",
+            "exercise_name_en": "Forearm Step Outs",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=CV8yb4zzZbc"
+        },
+        {
+            "exercise_name_ptbr": "Deslocamento frontal e costas com miniband",
+            "exercise_name_en": "Monster Walking Banded",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=YN3wmrPVP_k"
+        },
+        {
+            "exercise_name_ptbr": "Progressoes de toques nos pes",
+            "exercise_name_en": "Toe Touch Progression",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=Y6FoOllZAZQ"
+        },
+        {
+            "exercise_name_ptbr": "Descida da caixa segurando o kettlebell",
+            "exercise_name_en": "Goblet Box Step Down",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=zz27D-lmVew"
+        },
+        {
+            "exercise_name_ptbr": "Catavendo com Kettlebell",
+            "exercise_name_en": "Kettlebell Windmill",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=q1n-z_NcsoI"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao Pelvica",
+            "exercise_name_en": "Hip Thrust",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=NVBeLvQBHhA"
+        },
+        {
+            "exercise_name_ptbr": "Sfiff com dois kettlebell",
+            "exercise_name_en": "Dual KB Stiff",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=j0maD0ykrjQ"
+        },
+        {
+            "exercise_name_ptbr": "Elevacao Pelvica com barra",
+            "exercise_name_en": "Barbell Hip Thrust",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=ZbA9NdOp9wQ"
+        },
+        {
+            "exercise_name_ptbr": "Cadeira Adutora",
+            "exercise_name_en": "Adduction Chair",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=faYVG6hD5Mg"
+        },
+        {
+            "exercise_name_ptbr": "Aviao",
+            "exercise_name_en": "Air Plane",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=WuZxUBImUoE"
+        },
+        {
+            "exercise_name_ptbr": "Gato e Camelo",
+            "exercise_name_en": "CAT CAMEL",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=C1GcieI2eJg"
+        },
+        {
+            "exercise_name_ptbr": "Pronado com elevacao de bracos em W",
+            "exercise_name_en": "Prone W Lift",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=2W2PuF35kk0"
+        },
+        {
+            "exercise_name_ptbr": "Pronado com elevacao de bracos em Y W T",
+            "exercise_name_en": "Prone Y W T",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=Unw3bqdMKww"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao de perna em circulo em quatro apoios",
+            "exercise_name_en": "Quadruped Hip Cars",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=N0aD3abu4UI"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao toracica três apoios com cotovelos no chao e extensao total",
+            "exercise_name_en": "Thread The Needle",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=k8e4wK8S7-4"
+        },
+        {
+            "exercise_name_ptbr": "Rotacao toracica em pe com Kettlebell",
+            "exercise_name_en": "Kettlebell Torso Rotation",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=5cBlA0d5QFg"
+        },
+        {
+            "exercise_name_ptbr": "Caminhando com Kettlebell",
+            "exercise_name_en": "Kettlebell Farmer's Walk",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=8xA_2U3Eu3Y"
+        },
+        {
+            "exercise_name_ptbr": "Caminhada com passadas com kettlebell",
+            "exercise_name_en": "Kettlebell Walking Lunges",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=LG9y2qD2b6M"
+        },
+        {
+            "exercise_name_ptbr": "Caminhada com kettlebell em cima da cabeca",
+            "exercise_name_en": "Kettlebell Overhead Walk",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=0tH3D9A5n3c"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento com kettlebell acima da cabeca",
+            "exercise_name_en": "Kettlebell Overhead Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=pWcZmoeWnHw"
+        },
+        {
+            "exercise_name_ptbr": "Remada com Kettlebell em pe.",
+            "exercise_name_en": "Kettlebell Standing Row",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=8b6sOe1gPtI"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Single Arm Row",
+            "exercise_name_en": "Single Arm Kettlebell Row",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=IbbvI_qxy3g"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Single Arm Press",
+            "exercise_name_en": "Single Arm Kettlebell Press",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=4RDg2aUf9h0"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Single Arm Front Squat",
+            "exercise_name_en": "Single Arm Kettlebell Front Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=Fh3j7e1Fv3s"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Goblet Squat",
+            "exercise_name_en": "Kettlebell Goblet Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=8LVu_1ZQf3g"
+        },
+        {
+            "exercise_name_ptbr": "Remada unilateral com kettlebell",
+            "exercise_name_en": "Single Arm Kettlebell Row",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=9L2sEYWV70s"
+        },
+        {
+            "exercise_name_ptbr": "Agachamento sumo com kettlebell",
+            "exercise_name_en": "Kettlebell Sumo Squat",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=JbnIokAf0hU"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Push Press",
+            "exercise_name_en": "Kettlebell Push Press",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=2Hjac0v5Z6I"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Swings",
+            "exercise_name_en": "Kettlebell Swings",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=6vo7YvKNwZc"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Deadlifts",
+            "exercise_name_en": "Kettlebell Deadlifts",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=EBXZ0F1q7cM"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Russian Twists",
+            "exercise_name_en": "Kettlebell Russian Twists",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=2M9cpzSeQ7M"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Bottoms Up Press",
+            "exercise_name_en": "Kettlebell Bottoms Up Press",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=WbB6snq_w4c"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Figure 8",
+            "exercise_name_en": "Kettlebell Figure 8",
+            "category": "costas, abdomen, biceps",
+            "youtube_link": "https://www.youtube.com/watch?v=Ffw1RpLhH2Y"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Windmill",
+            "exercise_name_en": "Kettlebell Windmill",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=PbqzFjQJWx4"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Halo",
+            "exercise_name_en": "Kettlebell Halo",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=UWx4y9nizpY"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Snatch",
+            "exercise_name_en": "Kettlebell Snatch",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=2K2Yuta1wX8"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Single Arm Clean",
+            "exercise_name_en": "Kettlebell Single Arm Clean",
+            "category": "torax, ombro e triceps",
+            "youtube_link": "https://www.youtube.com/watch?v=FZ-9Wc0NZmE"
+        },
+        {
+            "exercise_name_ptbr": "Kettlebell Single Arm Swing",
+            "exercise_name_en": "Kettlebell Single Arm Swing",
+            "category": "parte inferior, pernas e gluteo",
+            "youtube_link": "https://www.youtube.com/watch?v=Kc0e6UxL8SI"
+        }
+    ]
+}

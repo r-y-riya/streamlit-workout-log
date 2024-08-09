@@ -1,0 +1,8 @@
+{
+    "rules": {
+      "max-len": ["error", { "code": 120 }] // Set the limit to 120 characters
+      // OR
+      "max-len": "off" // Disable the rule completely
+    }
+  }
+  
